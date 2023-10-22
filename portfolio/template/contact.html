@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Contact {% endblock title %}
+
+{% block content %}
+<section class="section sec5 contact" id="contact">
+    <div class="contact-container">
+        <div class="main-title">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-content-con">
+            <div class="left-contact">
+                <h4>contact me here</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Address
+                        </div>
+                        <p>: rtgg, fefeeg.</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email
+                        </div>
+                        <p>: tfaurnie99@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                            Contact No
+                        </div>
+                        <p>: 01726345445</p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="https://www.facebook.com/tahsin.ira.7/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-contact">
+                <form action="" class="contact-form">
+                    <div class="input-control i-c-2">
+                        <input type="text" required placeholder="YOUR NAME">
+                        <input type="email" required placeholder="YOUR EMAIL">
+                    </div>
+                    <div class="input-control">
+                        <input type="text" required placeholder="ENTER SUBJECT">
+                    </div>
+                    <div class="input-control">
+                        <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <a href="https://drive.google.com/file/d/13YZKjjluUNWiQliIWEa01e1yq6sNQZ0H/view?usp=sharing" target="_blank" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
+

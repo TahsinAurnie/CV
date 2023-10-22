@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+
+<header class="section sec1 header active" id="home">
+    <div class="header-content">
+        <div class="left-header">
+            <div class="h-shape"></div>
+            <div class="image">
+                <img src="{% static 'img/hero.png' %}" alt="">
+            </div>
+        </div>
+        <div class="right-header">
+            <h1 class="name">Hi, I'm <span>X.</span> <br>A Web Developer.
+            </h1>
+            <p>fefwefbfh.</p>
+            <div class="btn-con">
+                <a href="#" target="_blank" class="main-btn">
+                    <span class="btn-text">Download CV</span>
+                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock %}
