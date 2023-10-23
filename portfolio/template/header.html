@@ -1,0 +1,31 @@
+<header>
+    <div class="controlls">
+        <!-- dataset is data-id -->
+        <div class="control control-1 active-btn" data-id="home">
+            <a href="{% url 'home' %}">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+        <div class="control control-2" data-id="about">
+            <a href="{% url 'about' %}">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <a href="{% url 'portfolio' %}">
+                <i class="fa-solid fa-briefcase"></i>
+            </a>
+        </div>
+        <div class="control control-4" data-id="blogs">
+            <a href="blog.html">
+                <i class="fa-solid fa-code"></i>
+            </a>
+        </div>
+        <div class="control control-5" data-id="contact">
+            <a href="contact.html">
+                <i class="fa-solid fa-envelope-open"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
