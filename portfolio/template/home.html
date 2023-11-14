@@ -1,34 +1,147 @@
-{% extends 'base.html' %}
+<!-- {% extends 'base.html' %}
 
 {% load static %}
 
 {% block title %} Home {% endblock title %}
 
-{% block content %}
-<section class="section sec1 header active" id="home">
+<header class="section sec1 header active" id="home">
     <div class="header-content">
         <div class="left-header">
-        <div class="h-shape"></div>
+            <div class="h-shape"></div>
             <div class="image">
-                <img src="{% static 'img/hero.png' %}" alt="">
+                <img src="{{me.userprofile.avatar.url}}" alt="">
             </div>
         </div>
         <div class="right-header">
             <h1 class="name">
-                Hi, I'm <span>X.</span> <br>
-                A Web Developer.
+                Hi, I'm <span>{{me.first_name}} {{me.last_name}}.</span> <br>
+                A {{me.userprofile.title}}.
             </h1>
             <p>
-                fefwefbfh.
+                {{me.userprofile.bio}}
             </p>
             <div class="btn-con">
-                <a href="https://drive.google.com/file/d/13YZKjjluUNWiQliIWEa01e1yq6sNQZ0H/view?usp=sharing" target="_blank" class="main-btn">
+                <a href="{{me.userprofile.cv.url}}"
+                    target="_blank" class="main-btn">
                     <span class="btn-text">Download CV</span>
                     <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
                 </a>
             </div>
         </div>
     </div>
-</section>
-
-{% endblock content %}
+</header>
+<main>
+    <section class="section sec2 about" id="about">
+        <div class="main-title">
+            <h2>About <span>me</span></h2>
+        </div>
+        <div class="about-con">
+            <div class="left-about">
+                <h4>Information About Me</h4>
+                <p>
+                    gvedywevfwyfvv
+                </p>
+                <div class="btn-con">
+                    <a href="{{me.userprofile.cv.url}}" target="_blank" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="right-about">
+                <div class="about-item">
+                    <div class="abt-text">
+                        <div class="counter">
+                            <p class="large-text" data-count="150">0</p>
+                            <p class="small-text">Problems<br/> Solved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <div class="counter">
+                            <p class="large-text" data-count="50">0</p>
+                            <p class="small-text">Projects<br/> Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <div class="counter">
+                            <p class="large-text" data-count="100">0</p>
+                            <p class="small-text">Papers<br/>Reviewed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <div class="counter">
+                            <p class="large-text" data-count="1">0</p>
+                            <p class="small-text">Years of<br/>Experiance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-stats" id="skills-section">
+            <h4 class="stat-title">My Skills</h4>
+            <div class="progress-bars">
+                <div class="progress-bar">
+                    <p class="prog-title">C/C++</p>
+                    <div class="prog-con">
+                        <p class="prog-text" data-per="90">90%</p>
+                        <div class="prog">
+                            <span class="c"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <p class="prog-title">HTML</p>
+                    <div class="prog-con">
+                        <p class="prog-text" data-per="60">60%</p>
+                        <div class="prog">
+                            <span class="c"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <p class="prog-title">CSS</p>
+                    <div class="prog-con">
+                        <p class="prog-text" data-per="50">50%</p>
+                        <div class="prog">
+                            <span class="c"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <p class="prog-title">JavaScript</p>
+                    <div class="prog-con">
+                        <p class="prog-text" data-per="40">40%</p>
+                        <div class="prog">
+                            <span class="c"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <p class="prog-title">Python</p>
+                    <div class="prog-con">
+                        <p class="prog-text" data-per="80">80%</p>
+                        <div class="prog">
+                            <span class="c"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="stat-title">Educational Background</h4>
+        <div class="edu-bg">
+            <div class="edu-item">
+                <div class="edu-icon">
+                    <i class="fa-solid fa-building-columns"></i> 
+                </div>
+                <p class="edu-duration">2015</p>
+                <h5>SSC <span> - jfnhfvn</span></h5>
+            </div>
+        </div>
+    </section>
+</main> -->
